@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('imge/WhatsApp\ Image\ 2024-12-11\ at\ 00.33.19_556b2a3f.jpg') no-repeat center center / cover; /* الصورة الخلفية */
+    background-blend-mode: darken; /* دمج الصورة مع اللون الأسود */
+    background-color: rgba(0, 0, 0, 0.5); /* لون أسود شفاف فوق الصورة */
+}
+
+.box {
+    position: relative;
+    background-color: rgba(3, 23, 22, 0.8); /* خلفية شفافة لمربع تسجيل الدخول */
+    border-radius: 20px; /* حواف دائرية */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* ظل للمربع */
+    padding: 5%; /* حواف مرنة */
+    text-align: center;
+    width: 90%; /* عرض مرن */
+    max-width: 400px; /* الحد الأقصى للعرض */
+}
+
+.head-h2 {
+    color: #0C969C; /* اللون الرئيسي */
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* حجم النص */
+}
+
+input {
+    width: 90%; /* عرض الحقول كنسبة مئوية من عرض المربع */
+    max-width: 350px; /* الحد الأقصى للعرض */
+    padding: 12px;
+    margin: 10px auto; /* تباعد متساوٍ عموديًا وأفقيًا */
+    border: 2px solid #6BA3BE; /* لون الحواف */
+    border-radius: 10px; /* حواف دائرية */
+    background-color: #032F30; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    font-size: 1rem; /* حجم النص */
+    outline: none;
+    display: block; /* جعل العناصر تأخذ صفًا منفصلًا */
+}
+
+ button:hover {
+    color: #6BA3BE; /* لون النص داخل الحقول */
+    background-color: #274D60; /* لون الزر عند التمرير */
+
+}
+
+
+button {
+
+    width: 90%; /* نفس عرض الحقول */
+    max-width: 350px; /* الحد الأقصى للعرض */
+    padding: 12px;
+    background-color: #0A7075; /* لون الزر */
+    border: none;
+    border-radius: 10px; /* حواف دائرية للزر */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+
+
+ /* /* button:hover {
+    background-color: #274D60; /* لون الزر عند التمرير 
+}*/
+
+/* 
+.login-container p {
+    margin-top: 15px;
+    color: #FF5C5C; /* لون النص الأحمر }
+    */
+
+
+/* لجعل التصميم Responsive */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 4%; /* تقليل المسافة الداخلية */
+    }
+    .login-container h1 {
+        font-size: 1.5rem; /* تقليل حجم العنوان */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 3%; /* تقليل المسافة الداخلية */
+    }
+    .login-container h1 {
+        font-size: 1.2rem; /* تقليل حجم النص */
+    }
+    .login-container input, .login-container button {
+        font-size: 0.9rem; /* تصغير النصوص */
+    }
+}
